@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav>
+        <nav className="grid grid-flow-row grid-cols-2 p-1 bg-primary text-secondary">
+          <div className="ml-10">LOGO</div>
           <ul className="flex justify-around bg-alpha items-center">
             <li>
               <Link href="/">Home</Link>
@@ -28,7 +29,7 @@ export default function RootLayout({
             </li>
           </ul>
         </nav>
-        <div>{children}</div>
+        <div className="container">{children}</div>
       </body>
     </html>
   );
